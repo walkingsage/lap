@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+@mixin play {
+    font-family: 'Play', sans-serif;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin bold {
+    font-weight: 700;
+}

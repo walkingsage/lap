@@ -1,0 +1,244 @@
+@import fonts
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+
+html
+    transition-duration: 1s
+    scroll-behavior: smooth
+
+p
+    margin: 0 
+
+a:active, a:hover, a:focus,input:active, input:hover, input:focus 
+    outline: 0
+    outline-offset: 0
+
+
+a
+    text-decoration: none
+
+.container
+    max-width: 1194px/1366px*100%
+    padding: 0 10px
+    width: 100%
+    margin: 0 auto
+    height: 100%
+
+body
+    +play
+    +regular
+
+    .header
+        height: 55px
+        margin-top: 10px
+        margin-bottom: 18px
+
+        .header__content
+            display: grid
+            grid-template-columns: 300px/1174px*100% 296px/1174px*100% 195px/1174px*100% 190px/1174px*100% 193px/1174px*100% 
+            align-items: center
+
+            .logo
+                display: grid
+                grid-template-columns: 60px/300px*100% auto
+                grid-template-rows: 60% 40%
+                align-items: center
+
+                img
+                    grid-area: 1/1/3/2
+                    max-width: 46px
+                    width: 100%
+                    justify-self: start
+                    align-self: end
+                    height: 55px
+
+                .title__logo
+                    +bold
+                    font-size: 21px/16px*1em
+                    color: rgb(18, 99, 174)
+                    align-self: end
+
+                .subtitle__logo
+                    grid-area: 2/2/3/3
+                    font-size: 14px/16px*1em
+                    line-height: 16px
+                    color: rgb(106, 111, 117)
+
+            .always__lightning
+                display: grid
+                grid-template-columns: 40px/296px*100% auto
+                align-items: center
+
+                img
+                    max-width: 40px
+                    width: 100%
+
+                p
+                    +bold
+                    font-size: 13px/16px*1em
+                    color: rgb(77, 84, 95)
+                    text-transform: uppercase
+                    line-height: 15px
+                    margin-left: 5px
+
+            .schema__proezda
+                display: flex
+                align-content: center
+                
+                .fa
+                    color: rgb(81, 81, 81)
+
+                p
+                    font-size: 14px/16px*1em
+                    margin: 0 5px
+
+            .email,.phone
+                display: grid
+
+                .email__content,.phone__content
+                    justify-self: end
+                    display: grid
+                    grid-template-columns: 10% 90%
+                    grid-column-gap: 10px
+
+                    .fa
+                        color: rgb(18, 99, 174)
+
+                    .contact
+                        grid-area: 1/2/2/3
+                        font-size: 10px
+                        color: rgb(117, 127, 142)
+                        align-self: center
+
+
+                    a
+                        grid-area: 2/2/3/3
+                        font-size: 15px/16px*1em
+                        color: rgb(77, 84, 95)
+                        +bold
+
+                    a:hover,a:active,a:focus
+                        color: rgb(18, 99, 174)
+
+    .main
+        background-image: url("../../images/lapsmainbg.png")
+        background-size: 40%
+        background-position: right 80%
+        background-repeat: no-repeat
+
+        .catalog
+            .catalog__content
+                position: relative
+                display: grid
+                grid-template-columns: 170px auto
+                grid-template-rows: 42px auto
+                grid-column-gap: 6px
+                height: 42px
+
+                .catalog__btn
+                    width: 170px
+                    height: 100%
+                    display: flex
+                    background-color: rgb(18, 99, 174)
+                    border-radius: 2px
+                    padding: 11px 0 11px 15px
+
+                    .spans
+                        width: 28px
+                        height: 100%
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        margin-right: 12px
+
+                        .line
+                            height: 3px
+                            background: rgb(255, 255, 255)
+                            border-radius: 1px
+
+                        .first
+                            width: 100%
+
+                        .second
+                            width: 50%
+                            transition-duration: 1s
+
+                        .three
+                            width: 25%
+                            transition-duration: 1s
+
+                    p
+                        grid-area: 1/2/2/3
+                        font-size: 22px
+                        color: #ffffff
+                        text-transform: uppercase
+                        justify-self: center
+                        line-height: 90%
+                        text-align: left
+
+                .catalog__btn:hover
+                    cursor: pointer
+
+                    .spans
+
+                        .second
+                            width: 100%
+
+                        .three
+                            width: 100%
+
+
+                .search
+                    width: 100%
+                    height: 100%
+                    position: relative
+                    display: grid
+
+                    input
+                        width: 100%
+                        height: 100%
+                        background: #EEEEEE
+                        border-radius: 2px
+                        display: grid
+                        align-items: center
+                        text-align: left
+                        border: none
+                        padding: 0 0 0 24px
+
+                    .fa
+                        color: rgb(117, 127, 142)
+                        position: absolute
+                        align-self: center
+                        right: 12px
+
+                .categories
+                    position: absolute
+                    top: 60px
+                    columns: 4
+                    z-index: 10
+                    left: 0
+                    padding: 30px
+                    background-image: url("../../images/lapsbg.png")
+                    background-size: 40%
+                    background-position: right 80%
+                    background-repeat: no-repeat
+                    
+                    
+
+
+
+
+                
+
+
+                    
+                
+
+
+
+
+
