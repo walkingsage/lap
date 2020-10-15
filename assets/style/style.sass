@@ -216,18 +216,123 @@ body
                         right: 12px
 
                 .categories
+                    display: none
                     position: absolute
                     top: 60px
-                    columns: 4
                     z-index: 10
                     left: 0
-                    padding: 30px
-                    background-image: url("../../images/lapsbg.png")
-                    background-size: 40%
-                    background-position: right 80%
+                    background-color: #F8F8F8
+                    background-image: url("../../images/laps.png")
+                    background-size: 36%
+                    background-position: right top
                     background-repeat: no-repeat
+                    border-radius: 3px
+                    padding: 2px
+
+                    .categories__border
+                        align-self: center
+                        justify-self: center
+                        display: grid
+                        grid-template-columns: repeat(4,120px)
+                        grid-column-gap: 40px
+                        padding: 30px
+                        border: 1px solid #CED6DE
+                        filter: drop-shadow(6px 4px 14px rgba(0, 0, 0, 0.05))
+                        border-radius: 3px
+
+
+                        .column
+                            display: grid
+                            grid-row-gap: 30px
+
+                        .categorie
+                            font-size: 13px
+                            color: #4D545F
+
+                        .categorie:hover
+                            cursor: pointer
+                            +bold
+                            color: rgb(18, 99, 174)
+
+                        .active
+                            +bold
+                            color: rgb(18, 99, 174)
                     
-                    
+        .banner
+            margin-top: 18px
+            .banner__content
+                background-color: rgb(77, 84, 95) 
+                background-image: url("../../images/lapsbanner.png")
+                background-size: contain
+                background-position: right center
+                background-repeat: no-repeat
+                display: grid
+                grid-template-columns: 428px/1172px*100% auto
+                grid-column-gap: 30px
+                padding: 13px
+                border-radius: 3px
+
+                .banner__img
+                    max-width: 100%
+                    border: 1px solid #58606D
+                    border-radius: 3px
+
+                .right
+                    display: grid
+                    grid-template-rows: auto 88px/321px*100%
+
+                    .top
+                        display: flex
+                        flex-direction: column
+                        text-align: left
+                        justify-content: center
+
+                        .title
+                            font-size: 31px/16px*1em
+                            line-height: 41px
+                            text-transform: uppercase
+                            color: rgb(224, 231, 238)
+                            +bold
+
+                        .subtitle
+                            font-size: 24px/16px*1em
+                            line-height: 42px
+                            text-transform: uppercase
+                            color: #757F8e
+                            +regular
+
+                    .top__elements
+                        display: flex
+                        grid-template-columns: repeat(3,194px)
+                        column-gap: 40px/701px*100%
+
+                        .element__conteiner
+                            align-self: start
+                            display: flex
+
+                            .circle
+                                width: 60px
+                                height: 60px
+                                border: 1px solid #CED6DE
+                                border-radius: 50%
+                                display: grid
+                                align-items: center
+                                justify-items: center
+
+                                img
+                                    max-width: 80%
+
+                            .about
+                                align-self: center
+                                font-size: 15px/16px*1em
+                                line-height: 21px
+                                text-transform: uppercase
+                                color: #FFFFFF
+                                margin-left: 10px
+
+                
+
+
 
 
 

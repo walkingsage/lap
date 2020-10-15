@@ -175,15 +175,101 @@ body {
           align-self: center;
           right: 12px; }
       body .main .catalog .catalog__content .categories {
+        display: none;
         position: absolute;
         top: 60px;
-        columns: 4;
         z-index: 10;
         left: 0;
-        padding: 30px;
-        background-image: url("../../images/lapsbg.png");
-        background-size: 40%;
-        background-position: right 80%;
-        background-repeat: no-repeat; }
+        background-color: #F8F8F8;
+        background-image: url("../../images/laps.png");
+        background-size: 36%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        padding: 2px; }
+        body .main .catalog .catalog__content .categories .categories__border {
+          align-self: center;
+          justify-self: center;
+          display: grid;
+          grid-template-columns: repeat(4, 120px);
+          grid-column-gap: 40px;
+          padding: 30px;
+          border: 1px solid #CED6DE;
+          filter: drop-shadow(6px 4px 14px rgba(0, 0, 0, 0.05));
+          border-radius: 3px; }
+          body .main .catalog .catalog__content .categories .categories__border .column {
+            display: grid;
+            grid-row-gap: 30px; }
+          body .main .catalog .catalog__content .categories .categories__border .categorie {
+            font-size: 13px;
+            color: #4D545F; }
+          body .main .catalog .catalog__content .categories .categories__border .categorie:hover {
+            cursor: pointer;
+            font-weight: 700;
+            color: #1263ae; }
+          body .main .catalog .catalog__content .categories .categories__border .active {
+            font-weight: 700;
+            color: #1263ae; }
+    body .main .banner {
+      margin-top: 18px; }
+      body .main .banner .banner__content {
+        background-color: #4d545f;
+        background-image: url("../../images/lapsbanner.png");
+        background-size: contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 36.5187713311% auto;
+        grid-column-gap: 30px;
+        padding: 13px;
+        border-radius: 3px; }
+        body .main .banner .banner__content .banner__img {
+          max-width: 100%;
+          border: 1px solid #58606D;
+          border-radius: 3px; }
+        body .main .banner .banner__content .right {
+          display: grid;
+          grid-template-rows: auto 27.4143302181%; }
+          body .main .banner .banner__content .right .top {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center; }
+            body .main .banner .banner__content .right .top .title {
+              font-size: 1.9375em;
+              line-height: 41px;
+              text-transform: uppercase;
+              color: #e0e7ee;
+              font-weight: 700; }
+            body .main .banner .banner__content .right .top .subtitle {
+              font-size: 1.5em;
+              line-height: 42px;
+              text-transform: uppercase;
+              color: #757F8e;
+              font-weight: 400; }
+          body .main .banner .banner__content .right .top__elements {
+            display: flex;
+            grid-template-columns: repeat(3, 194px);
+            column-gap: 5.7061340942%; }
+            body .main .banner .banner__content .right .top__elements .element__conteiner {
+              align-self: start;
+              display: flex; }
+              body .main .banner .banner__content .right .top__elements .element__conteiner .circle {
+                width: 60px;
+                height: 60px;
+                border: 1px solid #CED6DE;
+                border-radius: 50%;
+                display: grid;
+                align-items: center;
+                justify-items: center; }
+                body .main .banner .banner__content .right .top__elements .element__conteiner .circle img {
+                  max-width: 80%; }
+              body .main .banner .banner__content .right .top__elements .element__conteiner .about {
+                align-self: center;
+                font-size: 0.9375em;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
