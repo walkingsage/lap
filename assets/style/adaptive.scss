@@ -306,6 +306,10 @@
 }
 
 @media screen and (max-width: 360px){
+    .header{
+        font-size: 0.8em !important;
+    }
+
     .right .top__elements .element__conteiner .circle{
         width: 50px !important;
         height: 50px !important;
