@@ -131,16 +131,18 @@ body {
             display: flex;
             flex-direction: column;
             align-content: center;
-            width: 32px;
-            height: 32px;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
             background-color: #757F8E;
             border-radius: 50%;
             padding: 4px; }
             body .header .header__content .mobile__top .mobile__burger .circle p {
-              font-size: 8px;
+              font-size: 12px;
               line-height: 10px;
               color: #FFFFFF;
-              text-align: center; }
+              text-align: center;
+              margin-bottom: 2px; }
             body .header .header__content .mobile__top .mobile__burger .circle .spans {
               align-self: center;
               width: 80%;
@@ -155,9 +157,9 @@ body {
               body .header .header__content .mobile__top .mobile__burger .circle .spans .first {
                 width: 100%; }
               body .header .header__content .mobile__top .mobile__burger .circle .spans .second {
-                width: 50%; }
+                width: 75%; }
               body .header .header__content .mobile__top .mobile__burger .circle .spans .three {
-                width: 25%; }
+                width: 50%; }
       body .header .header__content .email, body .header .header__content .phone {
         display: grid; }
         body .header .header__content .email .email__content, body .header .header__content .email .phone__content, body .header .header__content .phone .email__content, body .header .header__content .phone .phone__content {
