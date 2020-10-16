@@ -2,17 +2,66 @@
   .header {
     font-size: 0.8em; }
 
+  .main {
+    font-size: 0.8em; }
+
   .container {
-    max-width: 90% !important; } }
+    max-width: 90% !important; }
+
+  .maybe__content .containers .maybe__container .container__border {
+    grid-template-columns: 80px auto !important;
+    height: 100% !important;
+    padding: 40px 0px 40px !important;
+    justify-content: center; }
+
+  .maybe__content .containers .maybe__container .container__border .circle {
+    height: 80px !important;
+    width: 80px !important; } }
 @media screen and (max-width: 998px) {
   .header {
     font-size: 0.7em !important; }
 
   .container {
-    max-width: 95% !important; } }
+    max-width: 95% !important; }
+
+  .banner__content .right {
+    grid-template-rows: 70% 30% !important; }
+
+  .top__elements .element__conteiner .circle {
+    width: 40px !important;
+    height: 40px !important; }
+
+  .top__elements .element__conteiner .circle img {
+    max-width: 60% !important; }
+
+  .blocks__content {
+    grid-template-columns: repeat(5, 1fr) !important; }
+
+  .opors__plits {
+    grid-area: 2/3/3/5 !important; }
+
+  .tovars__containers {
+    grid-template-columns: 1fr 1fr !important; }
+
+  .tovar {
+    grid-template-rows: auto 50px; }
+
+  .maybe__content .containers {
+    grid-template-columns: 1fr 1fr !important; }
+
+  .maybe__content .containers .maybe__container .container__border {
+    grid-template-columns: 40% 53% !important; }
+
+  .maybe__content .containers .maybe__container .container__border .circle {
+    justify-self: center !important;
+    width: 100px !important;
+    height: 100px !important; } }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 100% !important; }
+
+  .banner__content {
+    font-size: 0.7em !important; }
 
   .schema__proezda {
     display: none !important; }
@@ -21,10 +70,27 @@
     display: grid !important; }
 
   .header__content {
-    grid-template-columns: 28.4284497445% 28.0877342419% 5.1107325383% 19.3143100511% 19.3143100511% !important; } }
+    grid-template-columns: 28.4284497445% 28.0877342419% 5.1107325383% 19.3143100511% 19.3143100511% !important; }
+
+  .blocks__content {
+    grid-template-columns: repeat(3, 1fr) !important; }
+
+  .opors__plits {
+    grid-area: 3/2/4/4 !important; }
+
+  .maybe__container .container__border {
+    padding: 20px 0 20px 0 !important; }
+
+  .maybe__content .containers .maybe__container .container__border .circle {
+    width: 80px !important;
+    height: 80px !important; } }
 @media screen and (max-width: 650px) {
+  .maybe__intresting .maybe__content .top {
+    font-size: 0.76em !important; }
+
   .header {
-    font-size: 0.51em !important; }
+    font-size: 0.51em !important;
+    height: auto !important; }
 
   .header__content {
     grid-template-columns: 28.8543441227% 27.6618398637% 3.4071550256% 19.7402044293% 19.7402044293% !important; }
@@ -34,7 +100,56 @@
     height: 25px !important; }
 
   .schema__proezda__mobile img {
-    width: 60%; } }
+    width: 60%; }
+
+  .banner__content {
+    grid-template-columns: 100% !important;
+    grid-row-gap: 20px; }
+
+  .banner__img {
+    width: 100%; }
+
+  .banner__content .right {
+    grid-template-rows: auto auto !important;
+    grid-row-gap: 20px; }
+
+  .banner__content .right .top__elements {
+    justify-content: center; }
+
+  .right .top__elements .element__conteiner .circle {
+    width: 60px !important;
+    height: 60px !important; }
+
+  .banner__content .right .top {
+    text-align: center !important; }
+
+  .tovars__containers {
+    grid-template-columns: 1fr !important; }
+
+  .maybe__content .containers {
+    grid-template-columns: 1fr !important; }
+
+  .maybe__content .containers .maybe__container .container__border .circle {
+    width: 100px !important;
+    height: 100px !important; }
+
+  .footer .container {
+    display: grid !important;
+    grid-row-gap: 20px;
+    grid-template-columns: 100%; }
+
+  .footer .container .logo {
+    grid-template-columns: 10% 90% !important;
+    grid-column-gap: 10px; }
+
+  .footer .container .ofert {
+    text-align: center !important; }
+
+  body .footer .container .right {
+    justify-content: center !important;
+    border-top: 1px solid #76808f;
+    padding-top: 10px;
+    padding-bottom: 10px; } }
 @media screen and (max-width: 468px) {
   .header {
     font-size: 0.8em !important; }
@@ -76,6 +191,75 @@
     grid-area: 2/2/3/3; }
 
   .email__content {
-    justify-self: end !important; } }
+    justify-self: end !important; }
+
+  .catalog__content {
+    grid-template-columns: 100% !important; }
+
+  .catalog__btn {
+    width: 100% !important;
+    justify-content: center;
+    padding-left: 0 !important; }
+
+  .catalog__content .search {
+    display: none !important; }
+
+  .banner__content .right .top__elements {
+    justify-content: space-around; }
+
+  .top__elements .element__conteiner {
+    flex-direction: column; }
+
+  .top__elements .element__conteiner .circle {
+    align-self: center !important; }
+
+  .top__elements .element__conteiner .about {
+    margin: 0 !important;
+    text-align: center !important; }
+
+  .categories__blocks {
+    font-size: 0.8em; }
+
+  .tovars__containers .tovar .button {
+    height: 40px !important; }
+
+  .text {
+    grid-template-columns: 60% 35% !important; }
+
+  .button__more {
+    height: 40px !important; }
+
+  .footer .container .logo {
+    font-size: 0.8em; } }
+@media screen and (max-width: 360px) {
+  .right .top__elements .element__conteiner .circle {
+    width: 50px !important;
+    height: 50px !important; }
+
+  .blocks__content {
+    grid-template-columns: repeat(2, 1fr) !important; }
+
+  .checkbox-other {
+    padding-left: 10px !important; }
+
+  .opors__plits {
+    grid-area: 4/1/5/2 !important;
+    min-width: 100% !important; }
+
+  .tovar {
+    grid-template-rows: auto 70px !important; }
+
+  .banner__content {
+    font-size: 0.65em !important; }
+
+  .maybe__content .containers .maybe__container .container__border {
+    grid-template-columns: 40% 49% !important; }
+
+  .maybe__content .containers .maybe__container .container__border .circle {
+    width: 80px !important;
+    height: 80px !important; }
+
+  .name__about {
+    line-height: 6px !important; } }
 
 /*# sourceMappingURL=adaptive.css.map */

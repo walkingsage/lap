@@ -33,13 +33,14 @@ body
     +regular
 
     .header
-        height: 55px
+        height: auto
         margin-top: 10px
         margin-bottom: 18px
 
         .header__content
             display: grid
             grid-template-columns: 300px/1174px*100% 296px/1174px*100% 195px/1174px*100% 190px/1174px*100% 193px/1174px*100% 
+            grid-row-gap: 15px
             align-items: center
 
             .logo
@@ -222,139 +223,142 @@ body
                     a:hover,a:active,a:focus
                         color: rgb(18, 99, 174)
 
+        .catalog__content
+            position: relative
+            display: grid
+            grid-template-columns: 170px auto
+            grid-template-rows: 42px auto
+            grid-column-gap: 6px
+            height: 42px
+            margin-top: 15px
+
+            .catalog__btn
+                width: 170px
+                height: 100%
+                display: flex
+                background-color: rgb(18, 99, 174)
+                border-radius: 2px
+                padding: 11px 0 11px 15px
+
+                .spans
+                    width: 28px
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    margin-right: 12px
+
+                    .line
+                        height: 3px
+                        background: rgb(255, 255, 255)
+                        border-radius: 1px
+
+                    .first
+                        width: 100%
+
+                    .second
+                        width: 50%
+                        transition-duration: 1s
+
+                    .three
+                        width: 25%
+                        transition-duration: 1s
+
+                p
+                    grid-area: 1/2/2/3
+                    font-size: 22px/16px*1em
+                    color: #ffffff
+                    text-transform: uppercase
+                    justify-self: center
+                    line-height: 90%
+                    text-align: left
+                    display: grid
+                    align-items: center
+
+            .catalog__btn:hover
+                cursor: pointer
+
+                .spans
+
+                    .second
+                        width: 100%
+
+                    .three
+                        width: 100%
+
+
+            .search
+                width: 100%
+                height: 100%
+                position: relative
+                display: grid
+
+                input
+                    width: 100%
+                    height: 100%
+                    background: #EEEEEE
+                    border-radius: 2px
+                    display: grid
+                    align-items: center
+                    text-align: left
+                    border: none
+                    padding: 0 0 0 24px
+                    font-size: 12px
+
+                .fa
+                    color: rgb(117, 127, 142)
+                    position: absolute
+                    align-self: center
+                    right: 12px
+
+            .categories
+                display: none
+                position: absolute
+                top: 60px
+                z-index: 10
+                left: 0
+                background-color: #F8F8F8
+                background-image: url("../../images/laps.png")
+                background-size: 36%
+                background-position: right top
+                background-repeat: no-repeat
+                border-radius: 3px
+                padding: 2px
+
+                .categories__border
+                    align-self: center
+                    justify-self: center
+                    display: grid
+                    grid-template-columns: repeat(4,120px)
+                    grid-column-gap: 40px
+                    padding: 30px
+                    border: 1px solid #CED6DE
+                    filter: drop-shadow(6px 4px 14px rgba(0, 0, 0, 0.05))
+                    border-radius: 3px
+
+
+                    .column
+                        display: grid
+                        grid-row-gap: 30px
+
+                    .categorie
+                        font-size: 13px
+                        color: #4D545F
+
+                    .categorie:hover
+                        cursor: pointer
+                        +bold
+                        color: rgb(18, 99, 174)
+
+                    .active
+                        +bold
+                        color: rgb(18, 99, 174)
+
     .main
         background-image: url("../../images/lapsmainbg.png")
         background-size: 36%
         background-position: right 84%
         background-repeat: no-repeat
-
-        .catalog
-            .catalog__content
-                position: relative
-                display: grid
-                grid-template-columns: 170px auto
-                grid-template-rows: 42px auto
-                grid-column-gap: 6px
-                height: 42px
-
-                .catalog__btn
-                    width: 170px
-                    height: 100%
-                    display: flex
-                    background-color: rgb(18, 99, 174)
-                    border-radius: 2px
-                    padding: 11px 0 11px 15px
-
-                    .spans
-                        width: 28px
-                        height: 100%
-                        display: flex
-                        flex-direction: column
-                        justify-content: space-between
-                        margin-right: 12px
-
-                        .line
-                            height: 3px
-                            background: rgb(255, 255, 255)
-                            border-radius: 1px
-
-                        .first
-                            width: 100%
-
-                        .second
-                            width: 50%
-                            transition-duration: 1s
-
-                        .three
-                            width: 25%
-                            transition-duration: 1s
-
-                    p
-                        grid-area: 1/2/2/3
-                        font-size: 22px
-                        color: #ffffff
-                        text-transform: uppercase
-                        justify-self: center
-                        line-height: 90%
-                        text-align: left
-
-                .catalog__btn:hover
-                    cursor: pointer
-
-                    .spans
-
-                        .second
-                            width: 100%
-
-                        .three
-                            width: 100%
-
-
-                .search
-                    width: 100%
-                    height: 100%
-                    position: relative
-                    display: grid
-
-                    input
-                        width: 100%
-                        height: 100%
-                        background: #EEEEEE
-                        border-radius: 2px
-                        display: grid
-                        align-items: center
-                        text-align: left
-                        border: none
-                        padding: 0 0 0 24px
-
-                    .fa
-                        color: rgb(117, 127, 142)
-                        position: absolute
-                        align-self: center
-                        right: 12px
-
-                .categories
-                    display: none
-                    position: absolute
-                    top: 60px
-                    z-index: 10
-                    left: 0
-                    background-color: #F8F8F8
-                    background-image: url("../../images/laps.png")
-                    background-size: 36%
-                    background-position: right top
-                    background-repeat: no-repeat
-                    border-radius: 3px
-                    padding: 2px
-
-                    .categories__border
-                        align-self: center
-                        justify-self: center
-                        display: grid
-                        grid-template-columns: repeat(4,120px)
-                        grid-column-gap: 40px
-                        padding: 30px
-                        border: 1px solid #CED6DE
-                        filter: drop-shadow(6px 4px 14px rgba(0, 0, 0, 0.05))
-                        border-radius: 3px
-
-
-                        .column
-                            display: grid
-                            grid-row-gap: 30px
-
-                        .categorie
-                            font-size: 13px
-                            color: #4D545F
-
-                        .categorie:hover
-                            cursor: pointer
-                            +bold
-                            color: rgb(18, 99, 174)
-
-                        .active
-                            +bold
-                            color: rgb(18, 99, 174)
                     
         .banner
             margin-top: 18px
@@ -624,7 +628,7 @@ body
                         align-self: center
 
                     .title
-                        font-size: 41px
+                        font-size: 41px/16px*1em
                         line-height: 51px
                         color: #4D545F
                         +bold
@@ -719,8 +723,8 @@ body
                                     cursor: pointer
 
     .footer
+        padding: 8px 0 8px 0
         margin-top: 70px
-        height: 65px
         background-color: rgb(77, 84, 95)
 
         .container
@@ -729,31 +733,34 @@ body
             align-content: center
 
             .logo
-                display: grid
-                grid-template-columns: 60px/300px*100% auto
-                grid-template-rows: 60% 40%
-                align-items: center
-                min-width: 280px
+                display: flex
+                align-content: end
 
                 img
                     grid-area: 1/1/3/2
-                    max-width: 46px
-                    width: 100%
+                    max-height: 55px
+                    height: 100%
+                    width: 14%
                     justify-self: start
+                    align-self: start
+                    max-height: 55px
+                    margin-right: 5px
+
+                .logo__text
                     align-self: center
-                    height: 55px
 
-                .title__logo
-                    +bold
-                    font-size: 21px/16px*1em
-                    color: rgb(255,255,255)
-                    align-self: end
+                    .title__logo
+                        +bold
+                        font-size: 21px/16px*1em
+                        color: rgb(255,255,255)
+                        align-self: end
 
-                .subtitle__logo
-                    grid-area: 2/2/3/3
-                    font-size: 14px/16px*1em
-                    line-height: 16px
-                    color: rgb(255,255,255)
+                    .subtitle__logo
+                        grid-area: 2/2/3/3
+                        font-size: 14px/16px*1em
+                        line-height: 16px
+                        color: rgb(255,255,255)
+                        align-self: start
 
             .ofert
                 font-size: 13px
