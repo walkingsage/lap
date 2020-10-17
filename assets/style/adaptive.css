@@ -83,7 +83,10 @@
 
   .maybe__content .containers .maybe__container .container__border .circle {
     width: 80px !important;
-    height: 80px !important; } }
+    height: 80px !important; }
+
+  .catalog__content .categories .categories__border {
+    grid-template-columns: repeat(4, 99px) !important; } }
 @media screen and (max-width: 650px) {
   .maybe__intresting .maybe__content .top {
     font-size: 0.76em !important; }
@@ -149,7 +152,14 @@
     justify-content: center !important;
     border-top: 1px solid #76808f;
     padding-top: 10px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+
+  .catalog__content .categories {
+    background-position: bottom right !important; }
+
+  .catalog__content .categories .categories__border {
+    grid-template-columns: repeat(3, 99px) !important;
+    grid-row-gap: 30px; } }
 @media screen and (max-width: 468px) {
   .header {
     font-size: 1em !important; }
@@ -230,7 +240,14 @@
     height: 40px !important; }
 
   .footer .container .logo {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+
+  .catalog__content .categories {
+    width: 100% !important; }
+
+  .catalog__content .categories .categories__border {
+    grid-template-columns: 1fr 1fr !important;
+    width: 100%; } }
 @media screen and (max-width: 360px) {
   .header {
     font-size: 0.8em !important; }
@@ -261,6 +278,10 @@
   .maybe__content .containers .maybe__container .container__border .circle {
     width: 80px !important;
     height: 80px !important; }
+
+  .catalog__content .categories .categories__border {
+    padding: 30px 20px 30px 20px !important;
+    grid-column-gap: 2px !important; }
 
   .name__about {
     line-height: 6px !important; } }
