@@ -152,7 +152,7 @@ body {
             height: 50px;
             background-color: #757F8E;
             border-radius: 50%;
-            padding: 4px; }
+            padding: 9px; }
             body .header .header__content .mobile__top .mobile__burger .circle p {
               font-size: 12px;
               line-height: 10px;
@@ -161,15 +161,15 @@ body {
               margin-bottom: 2px; }
             body .header .header__content .mobile__top .mobile__burger .circle .spans {
               align-self: center;
-              width: 80%;
-              height: 50%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between; }
+              width: 96%;
+              height: 100%;
+              display: grid;
+              grid-template-columns: 100%;
+              grid-row-gap: 20%; }
               body .header .header__content .mobile__top .mobile__burger .circle .spans .line {
-                height: 2px;
+                height: 2.5px;
                 background: white;
-                border-radius: 1px; }
+                border-radius: 50px; }
               body .header .header__content .mobile__top .mobile__burger .circle .spans .first {
                 width: 100%; }
               body .header .header__content .mobile__top .mobile__burger .circle .spans .second {
@@ -310,6 +310,102 @@ body {
     background-position: right 84%;
     background-repeat: no-repeat;
     margin-top: 120px; }
+    body .main .form {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      background-color: rgba(77, 84, 95, 0.86);
+      backdrop-filter: blur(20px);
+      top: 0;
+      z-index: 100; }
+      body .main .form form {
+        align-self: center; }
+        body .main .form form .form__content {
+          display: grid;
+          grid-template-columns: 100%;
+          background-color: rgba(255, 255, 255, 0.91);
+          background-image: url("../../images/lapsmainbg.png");
+          background-position: center right;
+          background-size: 30%;
+          background-repeat: no-repeat;
+          border-radius: 5px;
+          padding: 40px 98px 71px 98px;
+          grid-row-gap: 48px;
+          max-height: 100vh;
+          overflow-y: scroll; }
+          body .main .form form .form__content .top {
+            display: grid;
+            grid-template-columns: 40px auto;
+            grid-column-gap: 28px;
+            margin-bottom: 10px; }
+            body .main .form form .form__content .top img {
+              max-width: 40px;
+              width: 100%;
+              align-self: center; }
+            body .main .form form .form__content .top .title {
+              font-size: 1.9375em;
+              font-weight: 700;
+              line-height: 36px;
+              color: #4D545F; }
+          body .main .form form .form__content .inputs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 30px; }
+            body .main .form form .form__content .inputs input {
+              height: 60px;
+              width: 100%;
+              background: #FFFFFF;
+              border-radius: 2px;
+              border: none;
+              padding-left: 20px;
+              color: #000000; }
+            body .main .form form .form__content .inputs input::-webkit-input-placeholder {
+              text-transform: uppercase;
+              font-size: 0.875em;
+              line-height: 111%;
+              color: #4D545F; }
+            body .main .form form .form__content .inputs input::-moz-placeholder {
+              text-transform: uppercase;
+              font-size: 0.875em;
+              line-height: 111%;
+              color: #4D545F; }
+            body .main .form form .form__content .inputs input:-moz-placeholder {
+              text-transform: uppercase;
+              font-size: 0.875em;
+              line-height: 111%;
+              color: #4D545F; }
+            body .main .form form .form__content .inputs input:-ms-input-placeholder {
+              text-transform: uppercase;
+              font-size: 0.875em;
+              line-height: 111%;
+              color: #4D545F; }
+          body .main .form form .form__content .thank__you .title {
+            font-size: 1.9375em;
+            font-weight: 700;
+            line-height: 36px;
+            color: #4D545F;
+            text-align: center; }
+          body .main .form form .form__content .submit {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-row-gap: 13px; }
+            body .main .form form .form__content .submit .rules {
+              font-size: 11px;
+              line-height: 16px;
+              color: #4d545f;
+              max-width: 48%;
+              width: 100%;
+              text-align: left;
+              justify-self: center; }
+            body .main .form form .form__content .submit .submit__btn {
+              max-width: 48%;
+              width: 100%;
+              height: 64px;
+              background-color: #1263ae;
+              border-radius: 2px;
+              border: none;
+              justify-self: center; }
     body .main .banner {
       margin-top: 18px; }
       body .main .banner .banner__content {
@@ -357,7 +453,7 @@ body {
               body .main .banner .banner__content .right .top__elements .element__conteiner .circle {
                 width: 60px;
                 height: 60px;
-                border: 1px solid #CED6DE;
+                border: 1px solid #58606D;
                 border-radius: 50%;
                 display: grid;
                 align-items: center;
@@ -432,6 +528,20 @@ body {
           border-color: #1263ae; }
     body .main .tovars {
       margin-top: 54px; }
+      body .main .tovars .nothing {
+        display: grid;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        background-color: #F8F8F8; }
+        body .main .tovars .nothing .title {
+          font-size: 2.5625em;
+          line-height: 51px;
+          color: #4D545F;
+          font-weight: 700;
+          align-self: center;
+          text-transform: uppercase;
+          justify-self: center; }
       body .main .tovars .tovars__containers {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

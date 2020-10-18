@@ -1,3 +1,5 @@
+"use strict";
+
 const catalogbtn = document.querySelector('.catalog__btn'),
 catalog = document.querySelector('.categories'),
 categories = document.querySelectorAll('.categorie'),
@@ -6,7 +8,21 @@ obvodkaCheckbox = document.querySelectorAll('.checkbox-other'),
 tovar = document.querySelectorAll('.tovar'),
 buttonMore = document.querySelector('.button__more'),
 search = document.getElementById('search'),
-header = document.querySelector('.header');
+header = document.querySelector('.header'),
+logotext = document.querySelector('.mobile__top > .logo__mobile > .logo__text'),
+phone = document.querySelector('.header__content > .mobile__top > .phone'),
+phonedeleted = document.querySelector('.deleted__phone'),
+mail = document.querySelector('.dletedmail'),
+searchOpen = document.querySelector('.searchOpen'),
+searchBlock = document.querySelector('.search'),
+nothing = document.querySelector('.nothing'),
+formButton = document.querySelectorAll('.button__form'),
+form = document.querySelector('.form'),
+nameTovar = document.querySelectorAll('.title__tovar'),
+costTovar = document.querySelectorAll('.price'),
+inputNameTovar = document.getElementById('name__tovar'),
+inputCostTovar = document.getElementById('cost__tovar'),
+formcontent = document.querySelector('.form__content');
 
 let typeTovar = "";
 let btnMore = false;
@@ -14,6 +30,15 @@ let tovarsContent = 0;
 let tovarShow = 6;
 let typeTovarShow = 0;
 let searching = false;
+
+const scrollOf = () => {
+    document.body.style.overflow = 'hidden';
+};
+
+const scrollOn = () => {
+    document.body.style.overflow = 'scroll';
+    document.body.style.overflowX = 'hidden';
+};
 
 let moreRemove = () => {
     console.log("tovarcontent" + tovarsContent);
@@ -204,6 +229,12 @@ function myFunction() {
         tovar[i].style.display = "none";
       }
     }
+    if(tovarsContent == 0){
+        nothing.style.display = "grid";
+    }
+    else{
+        nothing.style.display = "none";
+    }
     buttonMore.style.display = "none";
     console.log(tovarsContent);
   }
@@ -212,11 +243,80 @@ function myFunction() {
 $(window).scroll(function() {
     var top = $(document).scrollTop();
     if (top < 150){
-        $(".header").removeClass('fixed');
-        header.style.animation = "none";
+        if(window.innerWidth > 469){
+            $(".header").removeClass('fixed');
+            header.style.animation = "none";
+        }
+        else{
+            logotext.style.display = "block";
+            phone.style.display = "none";
+            phonedeleted.style.display = "grid";
+            mail.style.display = "grid";
+            searchOpen.style.display = "none";
+            $(".header").removeClass('fixed');
+            header.style.animation = "none";
+        }
     } 
     else{
-        $(".header").addClass('fixed');
-        header.style.animation = "1s cubic-bezier(0.26, 0.45, 0.6, 0.93) 0s 1 forwards headerShow";
+        if(window.innerWidth > 469){
+            $(".header").addClass('fixed');
+            header.style.animation = "1s cubic-bezier(0.26, 0.45, 0.6, 0.93) 0s 1 forwards headerShow";
+        }
+        else{
+            logotext.style.display = "none";
+            phone.style.display = "grid";
+            phonedeleted.style.display = "none";
+            mail.style.display = "none";
+            searchOpen.style.display = "block";
+            $(".header").addClass('fixed');
+            header.style.animation = "1s cubic-bezier(0.26, 0.45, 0.6, 0.93) 0s 1 forwards headerShow";
+        }
     } 
+});
+
+let searchOpened = false;
+
+searchOpen.addEventListener('click', () => {
+    if (searchOpened == false){
+        searchBlock.classList.remove('searchMobile');
+        searchBlock.classList.add('searchMobileOpen');
+        search.style.display = "block";
+        searchOpened = true;
+    }
+    else{
+        searchBlock.classList.add('searchMobile');
+        searchBlock.classList.remove('searchMobileOpen');
+        search.style.display = "none";
+        searchOpened = false;
+    }
+});
+
+let formOpen = false;
+
+
+formButton.forEach((element,i) => {
+   element.addEventListener('click', () => {
+       form.style.display = "grid";
+       inputNameTovar.value = nameTovar[i].textContent;
+       inputCostTovar.value = `${costTovar[i].textContent}₽`;
+       formOpen = true;
+       scrollOf();
+   });
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".form__content"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0 && formOpen) { // и не по его дочерним элементам
+        $(".form").hide(); // скрываем его
+        scrollOn();
+    }
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".categories"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.hide(); // скрываем его
+    }
 });

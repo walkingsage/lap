@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Каталог ЛЭП</title>
 
     <!-- scripts -->
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/adaptive.css">
     <link rel="stylesheet" href="assets/style/animation.css">
+    <link rel="stylesheet" href="assets/style/scroll.css">
 
 </head>
 <body>
@@ -40,14 +41,14 @@
                         <img src="images/marker.svg" alt="Локация">
                     </div>
                 </a>
-                <div class="email">
+                <div class="email dletedmail">
                     <div class="email__content">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <p class="contact">E-mail:</p>
                         <a href="mailto:tdlk-nn@mail.ru">tdlk-nn@mail.ru</a>
                     </div>
                 </div>
-                <div class="phone">
+                <div class="phone deleted__phone">
                     <div class="phone__content">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <p class="contact">Телефон:</p>
@@ -69,9 +70,17 @@
                             <a href="tel:+7 (831) 214-68-11">+7 (831) 214-68-11</a>
                         </div>
                     </div>
+                    <div style="display: none;" class="phone">
+                        <div class="phone__content">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p class="contact">Телефон:</p>
+                            <a href="tel:+7 (831) 214-68-11">+7 (831) 214-68-11</a>
+                        </div>
+                    </div>
+                    <i class="fa fa-search searchOpen" style="display: none;" aria-hidden="true"></i>
                     <div class="mobile__burger">
                         <div class="circle">
-                            <p>Меню</p>
+                            <p>меню</p>
                             <div class="spans">
                                 <span class="first line"></span>
                                 <span class="second line"></span>
@@ -90,7 +99,7 @@
                     </div>
                     <p>каталог</p>
                 </div>
-                <div class="search">
+                <div class="search searchMobile">
                     <input id="search" type="text" placeholder="ПОИСК ПО КАТАЛОГУ" onkeyup="myFunction()">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
@@ -195,6 +204,11 @@
         <div id="tovars" class="tovars">
             <div class="container">
                 <div class="tovars__content">
+                    <div style="display: none;" class="nothing">
+                        <h2 class="title">
+                            Ничего не найдено
+                        </h2>
+                    </div>
                     <div class="tovars__containers">
                         <div class="tovar pristavki">
                             <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
@@ -233,7 +247,7 @@
                                 Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
                             </span>
                             <span class="price">по запросу</span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Запросить цену
                             </a>
                         </div>
@@ -274,7 +288,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -315,7 +329,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -356,7 +370,7 @@
                                 Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
                             </span>
                             <span class="price">по запросу</span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Запросить цену
                             </a>
                         </div>
@@ -397,7 +411,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -438,7 +452,7 @@
                                 Приставка,Приставки,ЖелезобетонныеопорыЛЭП35кВнавибрированныхстойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div><div class="tovar pristavki">
@@ -478,7 +492,7 @@
                                 Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
                             </span>
                             <span class="price">по запросу</span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Запросить цену
                             </a>
                         </div>
@@ -519,7 +533,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -560,7 +574,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div><div class="tovar pristavki">
@@ -600,7 +614,7 @@
                                 Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
                             </span>
                             <span class="price">по запросу</span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Запросить цену
                             </a>
                         </div>
@@ -641,7 +655,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -682,7 +696,7 @@
                                 Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -723,7 +737,7 @@
                                 Опорные плиты,Опорная плита
                             </span>
                             <span class="price">по запросу</span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Запросить цену
                             </a>
                         </div>
@@ -764,7 +778,7 @@
                                 Опорные плиты,Опорная плита
                             </span>
                             <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button">
+                            <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
@@ -892,6 +906,32 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="display: none;" class="form">
+            <form>
+                <div class="form__content">
+                    <div class="top">
+                        <img src="images/lightning.png" alt="Молния">
+                        <h2 class="title">Оставьте заявку и наш менеджер свяжется с Вами</h2>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="name" id="name" placeholder="Имя" required>
+                        <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+                        <input type="text" name="email" id="email" placeholder="E-MAIL" required>
+                        <input type="text" name="tovar" id="name__tovar" style="display: none;">
+                        <input type="text" name="cost" id="cost__tovar" style="display: none;">
+                    </div>
+                    <div style="display: none;" class="thank__you">
+                        <h2 class="title">
+                            Ваш заказ обрабатывается менеджерами
+                        </h2>
+                    </div>
+                    <div class="submit">
+                        <p class="rules">Нажимая кнопку «ОТПРАВИТЬ» Вы соглашаетесь с условиями <br> обработки персональных данных</p>
+                        <input class="submit__btn" type="submit" value="Отправить">
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
     <footer class="footer">

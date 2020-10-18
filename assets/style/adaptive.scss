@@ -1,3 +1,15 @@
+@media screen and (min-width: 1366px){
+    .container{
+        max-width: 1180px !important;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    .main{
+        margin-top: 140px !important;
+    }
+}
+
 @media screen and (max-width: 1200px){
     .header{
         font-size: 0.8em;
@@ -73,6 +85,29 @@
         width: 100px !important;
         height: 100px !important;
     }
+
+    .form__content .top{
+        grid-column-gap: 10px !important;
+    }
+
+    .form__content .top img{
+        width: 30px !important;
+    }
+
+    .form__content .top .title{
+        font-size: 1.5375em !important;
+    }
+
+    .form__content .inputs{
+        grid-template-columns: 1fr 1fr !important;
+        grid-row-gap: 30px;
+    }
+
+    #email{
+        grid-area: 2/1/3/3;
+        max-width: 48% !important;
+        justify-self: center;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -114,9 +149,42 @@
     .catalog__content .categories .categories__border{
         grid-template-columns: repeat(4, 99px) !important;
     }
+
+    .form__content .inputs{
+        grid-template-columns: 100% !important;
+        grid-row-gap: 30px;
+        text-align: center;
+    }
+
+    #phone{
+        grid-area: 2/1/3/2;
+    }
+
+    #email{
+        grid-area: 3/1/4/2 !important;
+        max-width: 100% !important;
+        justify-self: center;
+    }
+
+    .submit__btn{
+        max-width: 100% !important;
+    }
+
+    .rules{
+        max-width: 100% !important;
+    }
+
+    .form__content{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
 }
 
 @media screen and (max-width: 650px){
+    .form__content .top .title{
+        line-height: 20px !important;
+    }
+
     .maybe__intresting .maybe__content .top{
         font-size: 0.76em !important;
     }
@@ -211,8 +279,46 @@
 }
 
 @media screen and (max-width: 468px){
+
+    .tovars .nothing{
+        height: 400px !important;
+    }
+
+    .tovars .nothing .title{
+        font-size: 1.5375em !important;
+    }
+
+    .thank__you .title{
+        font-size: 1.5375em !important;
+        line-height: 20px !important;
+    }
+
+    
+
+    .form__content .top .title{
+        font-size: 1.4375em !important;
+    }
+
+    .header__content .phone .email__content, body .header .header__content .phone .phone__content{
+        height: 70%;
+        align-self: center;
+    }
+
+    .searchOpen{
+        align-self: center;
+        font-size: 18px;
+        color: #757f8e;
+    }
+
+    .mobile__top .logo__mobile img{
+        height: 100% !important;
+        width: 40px !important;
+    }
     .header{
-        font-size: 1em !important;
+        font-size: 0.9em !important;
+        padding-bottom: 10px !important;
+        padding-top: 10px !important;
+        margin: 0 !important;
     }
 
     .header__content{
@@ -276,8 +382,16 @@
         padding-left: 0 !important;
     }
 
-    .catalog__content .search{
+    .catalog__content .searchMobile{
         display: none !important;
+        margin-top: 10px;
+        height: 40px !important;
+    }
+
+    .catalog__content .searchMobileOpen{
+        display: grid !important;
+        margin-top: 10px;
+        height: 40px !important;
     }
 
     .banner__content .right .top__elements{
@@ -325,9 +439,22 @@
         grid-template-columns: 1fr 1fr !important;
         width: 100%;
     }
+    .main{
+        margin-top: 180px !important;
+    }
+
+    .maybe__content .top .title{  
+        margin-left: 10px !important;
+        line-height: 25px !important;
+    }
 }
 
 @media screen and (max-width: 360px){
+
+    .thank__you .title{
+        font-size: 1.2375em !important;
+    }
+
     .header{
         font-size: 0.8em !important;
     }
