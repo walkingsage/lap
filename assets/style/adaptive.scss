@@ -21,6 +21,10 @@
         max-width: 90% !important;
     }
 
+    .map{
+        margin-top: 56px !important;
+    }
+
     .maybe__content .containers .maybe__container .container__border{
         grid-template-columns: 80px auto !important;
         height: 100% !important;
@@ -108,6 +112,9 @@
         max-width: 48% !important;
         justify-self: center;
     }
+    .map{
+        margin-top: 46px !important;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -183,6 +190,10 @@
 @media screen and (max-width: 650px){
     .form__content .top .title{
         line-height: 20px !important;
+    }
+
+    .map{
+        width: 100% !important;
     }
 
     .maybe__intresting .maybe__content .top{
@@ -279,6 +290,9 @@
 }
 
 @media screen and (max-width: 468px){
+    .map{
+        margin-top: 55px !important;
+    }
 
     .tovars .nothing{
         height: 400px !important;

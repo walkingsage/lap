@@ -6,8 +6,9 @@
     <title>Каталог ЛЭП</title>
 
     <!-- scripts -->
-    <script src="https://use.fontawesome.com/b226044d61.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" ></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/b226044d61.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" ></script>
+    <script type="text/javascript" src="assets/script/jquery.maskedinput.min.js"></script>
 
     <!-- styles -->
     <link rel="stylesheet" href="assets/style/style.css">
@@ -35,6 +36,9 @@
                     <img src="images/marker.svg" alt="Локация">
                     <p>Схема проезда</p>
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <div class="map" style="display: none;">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A211e0ac2422cfef7eccbe20c13365757bbd8c54d194e2624f16d321d4f8abacf&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <a href="#" class="schema__proezda__mobile">
                     <div class="circle">
@@ -123,7 +127,7 @@
                             <a href="#tovars" class="categorie homuts">Хомуты</a>
                             <a href="#tovars" class="categorie yzels">Узлы крепления</a>
                         </div>
-                        <p class="categorie">Стяжки</p>
+                        <p class="categorie styazjki">Стяжки</p>
                     </div>
                 </div>
             </div>
@@ -210,29 +214,278 @@
                         </h2>
                     </div>
                     <div class="tovars__containers">
-                        <div class="tovar pristavki">
+                        <div class="tovar opors">
                             <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 10 кВ</p>
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
                             <div class="about__tovar">
                                 <div class="text">
                                     <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
+                                    <p class="value shifr">СВ 95-2</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
+                                    <p class="value">9,5</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Сталь, кг</p>
+                                    <p class="value">0,3</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">28,73</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры ЛЭП 10 кВ, СВ95-2,СВ 95 2, СВ952
+                            </span>
+                            <span class="price">5220 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–95-2а</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">9,5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Сталь, кг</p>
+                                    <p class="value">0,3</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">29,9</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–95-2а, СВ 95 2а, СВ952а
+                            </span>
+                            <span class="price">5315 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ-95-3</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">9,5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,36</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">28,73</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ-95-3, СВ 95 3, СВ953
+                            </span>
+                            <span class="price">7610 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–95-3IV</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">9,5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,36</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">56,4</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–95-3IV,СВ–95-3-4,СВ–95-34,СВ 95 3IV,СВ953IV,СВ9534,СВ953IV
+                            </span>
+                            <span class="price">7480 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–95-3С</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">9,5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,36</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">46,4</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–95-3С , СВ953С , СВ 95 3С
+                            </span>
+                            <span class="price">6375 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–110-3,5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">11</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,45</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">103,3</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–110-3,5, СВ 110 3,5, СВ1103,5, СВ11035, СВ 110 35 
+                            </span>
+                            <span class="price">6375 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–110-5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">11</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,45</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">100,8</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–110-5, СВ1105, СВ 110 5
+                            </span>
+                            <span class="price">8510 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–110-3,5-1V</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">11</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,45</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">64,4</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–110-3,5-1V,СВ 110 3,5 1V, СВ1103,515, СВ1103,51V
+                            </span>
+                            <span class="price">8910 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–110-5-IV</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">11</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,45</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">100,8</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–110-3,5-1V,СВ 110 3,5 1V, СВ1103,515, СВ1103,51V
+                            </span>
+                            <span class="price">10655 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–105-3,6-IV</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">11</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
@@ -240,40 +493,57 @@
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="value">95,9</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–105-3,6-IV, СВ1053,6IV, СВ 105 3,6 IV, СВ–105-3,6-5, СВ1053,65, СВ 105 3,6 5
                             </span>
-                            <span class="price">по запросу</span>
+                            <span class="price">9645 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
-                                Запросить цену
+                                Оставить заявку
                             </a>
                         </div>
-                        <div class="tovar pristavki">
+                        <div class="tovar opors">
                             <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на вибрированных стойках</p>
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
                             <div class="about__tovar">
                                 <div class="text">
                                     <p class="name__about">Шифр опоры</p>
-                                    <p class="value">ПБ35-1В</p>
+                                    <p class="value shifr">СВ–105-5-IV</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">10,5</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ164-10,7</p>
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,47</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">92</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–105-5-IV, СВ 105 5 IV, СВ1055IV, СВ–105-5-4, СВ 105 5 4, СВ10554
+                            </span>
+                            <span class="price">10250 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СВ–164-12</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Высота стойки, м</p>
                                     <p class="value">16,4</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">10,8</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
@@ -281,503 +551,506 @@
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">63,3</p>
+                                    <p class="value">355,4</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СВ–164-12, СВ16412, СВ 164 12
                             </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">31500 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar opors">
+                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
+                            <p class="title__tovar">Стойка(опора) железобетонная вибрированная</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр опоры</p>
+                                    <p class="value shifr">СНВ–7-13</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота стойки, м</p>
+                                    <p class="value">13</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,75</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Масса металлоконструкций, кг</p>
+                                    <p class="value">225,4</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Стойка,Стойки, Опоры , Опора, Стойка железобетонная вибрированная,опора железобетонная вибрированная , Железобетонные опоры, СНВ–7-13, СНВ 7 13, СНВ713
+                            </span>
+                            <span class="price">19000 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
                         <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на центрифугированных стойках</p>
+                            <img src="images/pristavki.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Приставка</p>
                             <div class="about__tovar">
                                 <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
+                                    <p class="name__about">Шифр приставки</p>
+                                    <p class="value shifr">ПТ-43-2</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Высота приставки, м</p>
+                                    <p class="value">4,25</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
+                                    <p class="value">0,13</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="name__about">класс бетона</p>
+                                    <p class="value">В25</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
+                               приставка, приставки, ПТ-43-2, ПТ 43 2 , ПТ432
                             </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">3890 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
                         <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 10 кВ</p>
+                            <img src="images/pristavki.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Приставка</p>
                             <div class="about__tovar">
                                 <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
+                                    <p class="name__about">Шифр приставки</p>
+                                    <p class="value shifr">ПТ-43-2,2</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Высота приставки, м</p>
+                                    <p class="value">4,25</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
+                                    <p class="value">0,13</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="name__about">класс бетона</p>
+                                    <p class="value">В25</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
+                               приставка, приставки, ПТ-43-2,2, ПТ 43 2,2, ПТ432,2
                             </span>
-                            <span class="price">по запросу</span>
-                            <a href="#" class="button button__form">
-                                Запросить цену
-                            </a>
-                        </div>
-                        <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на вибрированных стойках</p>
-                            <div class="about__tovar">
-                                <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">ПБ35-1В</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ164-10,7</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">16,4</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">10,8</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">1,42</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">63,3</p>
-                                </div>
-                            </div>
-                            <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
-                            </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">3340 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
                         <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на центрифугированных стойках</p>
+                            <img src="images/pristavki.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Приставка</p>
                             <div class="about__tovar">
                                 <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
+                                    <p class="name__about">Шифр приставки</p>
+                                    <p class="value shifr">ПТ-33-2</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Высота приставки, м</p>
+                                    <p class="value">3,25</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
+                                    <p class="value">0,129</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="name__about">класс бетона</p>
+                                    <p class="value">В25</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,ЖелезобетонныеопорыЛЭП35кВнавибрированныхстойках,СВ105-3,5;СВ105,СВ10535,СВ105
+                               приставка, приставки, ПТ-33-2, ПТ332, ПТ 33 2
                             </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button button__form">
-                                Оставить заявку
-                            </a>
-                        </div><div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 10 кВ</p>
-                            <div class="about__tovar">
-                                <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
-                                </div>
-                            </div>
-                            <span class="searchMarkers" style="display: none;">
-                                Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
-                            </span>
-                            <span class="price">по запросу</span>
-                            <a href="#" class="button button__form">
-                                Запросить цену
-                            </a>
-                        </div>
-                        <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на вибрированных стойках</p>
-                            <div class="about__tovar">
-                                <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">ПБ35-1В</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ164-10,7</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">16,4</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">10,8</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">1,42</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">63,3</p>
-                                </div>
-                            </div>
-                            <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
-                            </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">2245 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
                         <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на центрифугированных стойках</p>
+                            <img src="images/pristavki.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Приставка</p>
                             <div class="about__tovar">
                                 <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
+                                    <p class="name__about">Шифр приставки</p>
+                                    <p class="value shifr">ПТ-33-3</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Высота приставки, м</p>
+                                    <p class="value">3,25</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
+                                    <p class="value">0,129</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="name__about">класс бетона</p>
+                                    <p class="value">В25</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
+                               приставка, приставки, ПТ-33-3, ПТ 33 3, ПТ333
                             </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
-                            <a href="#" class="button button__form">
-                                Оставить заявку
-                            </a>
-                        </div><div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 10 кВ</p>
-                            <div class="about__tovar">
-                                <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
-                                </div>
-                            </div>
-                            <span class="searchMarkers" style="display: none;">
-                                Приставка, Приставки, Железобетонные опоры ЛЭП 10 кВ, СВ105-3,5; СВ105, СВ10535, СВ105
-                            </span>
-                            <span class="price">по запросу</span>
-                            <a href="#" class="button button__form">
-                                Запросить цену
-                            </a>
-                        </div>
-                        <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на вибрированных стойках</p>
-                            <div class="about__tovar">
-                                <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">ПБ35-1В</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ164-10,7</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">16,4</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">10,8</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">1,42</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">63,3</p>
-                                </div>
-                            </div>
-                            <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
-                            </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">2550 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
                         <div class="tovar pristavki">
-                            <img src="images/stoyki.jpg" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Железобетонные опоры ЛЭП 35 кВ на центрифугированных стойках</p>
+                            <img src="images/pristavki.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Приставка</p>
                             <div class="about__tovar">
                                 <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
+                                    <p class="name__about">Шифр приставки</p>
+                                    <p class="value shifr">ПТ-33-4</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Высота приставки, м</p>
+                                    <p class="value">3,25</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
+                                    <p class="value">0,129</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="name__about">класс бетона</p>
+                                    <p class="value">В25</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Приставка,Приставки,Железобетонные опоры ЛЭП 35кВ на вибрированных стойках,СВ105-3,5;СВ105,СВ10535,СВ105
+                               приставка, приставки, ПТ-33-4, ПТ334, ПТ 33 4 
                             </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">2880 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar pristavki">
+                            <img src="images/pristavki.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Приставка</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр приставки</p>
+                                    <p class="value shifr">ПТ-33-4</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота приставки, м</p>
+                                    <p class="value">3,25</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,129</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">класс бетона</p>
+                                    <p class="value">В25</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                               приставка, приставки, ПТ-33-4, ПТ334, ПТ 33 4
+                            </span>
+                            <span class="price">2510 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar fundament">
+                            <img src="images/fundamend.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Фундамент под металлические опоры ЛЭП</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр фундамента</p>
+                                    <p class="value shifr">Ф-2А</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота фундамента, м</p>
+                                    <p class="value">3,2</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">1,2</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">231</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Фундамент под металлические опоры ЛЭП, Фундаменты под металлические опоры ЛЭП, Ф-2А, Ф2А, Ф 2А
+                            </span>
+                            <span class="price">49035 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar fundament">
+                            <img src="images/fundamend.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Фундамент под металлические опоры ЛЭП</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр фундамента</p>
+                                    <p class="value shifr">Ф-3Ам</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота фундамента, м</p>
+                                    <p class="value">3,115</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">1,7</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">231</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Фундамент под металлические опоры ЛЭП, Фундаменты под металлические опоры ЛЭП, Ф-3Ам, Ф3Ам, Ф 3Ам
+                            </span>
+                            <span class="price">65965 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar fundament">
+                            <img src="images/fundamend.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Фундамент под металлические опоры ЛЭП</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр фундамента</p>
+                                    <p class="value shifr">Ф-5Ам</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота фундамента, м</p>
+                                    <p class="value">3,115</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">2,5</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">231</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                Фундамент под металлические опоры ЛЭП, Фундаменты под металлические опоры ЛЭП, Ф-5Ам, Ф5Ам, Ф 5Ам
+                            </span>
+                            <span class="price">91455 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar lotki">
+                            <img src="images/lotok.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Универсальный лоток</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр лотка</p>
+                                    <p class="value shifr">УБК-1А</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота лотка, м</p>
+                                    <p class="value">0,16</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,11</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">8,3</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                лотки, лоток, универсальные лотки, универсальный лоток, УБК-1А, УБК 1А, УБК1А
+                            </span>
+                            <span class="price">2970 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar lotki">
+                            <img src="images/lotok.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Универсальный лоток</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр лотка</p>
+                                    <p class="value shifr">УБК-2А</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота лотка, м</p>
+                                    <p class="value">0,16</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,07</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">7,1</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                                лотки, лоток, универсальные лотки, универсальный лоток, УБК-2А, УБК 2А, УБК2А
+                            </span>
+                            <span class="price">2400 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar lotki">
+                            <img src="images/lotok.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Универсальный лоток</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр лотка</p>
+                                    <p class="value shifr">УБК-5А</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота лотка, м</p>
+                                    <p class="value">0,06</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,029</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">7,1</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                               лотки, лоток, универсальные лотки, универсальный лоток, УБК-5А, УБК 5А, УБК5А
+                            </span>
+                            <span class="price">1520 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar rigels">
+                            <img src="images/rigel.jpg" alt="Приставка ЛЭП">
+                            <p class="title__tovar">Ригель</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр ригеля</p>
+                                    <p class="value shifr">Р 1-А</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота ригеля, м</p>
+                                    <p class="value">0.02</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,2</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">38</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                               ригель, ригеля, ригели, Р 1-А, Р 1А, Р1А, Р 1 А
+                            </span>
+                            <span class="price">4950 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar bruski">
+                            <img src="images/brusok.jpg" alt="Брусок">
+                            <p class="title__tovar">Брусок</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр бруска</p>
+                                    <p class="value shifr">БК-11</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота бруска, м</p>
+                                    <p class="value">0.015</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,007</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">0,9</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                               брусок, бруски, БК-11, БК11, БК 11
+                            </span>
+                            <span class="price">490 <i class="fa fa-rub" aria-hidden="false"></i></span>
+                            <a href="#" class="button button__form">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="tovar bruski">
+                            <img src="images/brusok.jpg" alt="Брусок">
+                            <p class="title__tovar">Брусок</p>
+                            <div class="about__tovar">
+                                <div class="text">
+                                    <p class="name__about">Шифр бруска</p>
+                                    <p class="value shifr">БК-12</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Высота бруска, м</p>
+                                    <p class="value">0.015</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Объем железобетона, м3</p>
+                                    <p class="value">0,015</p>
+                                </div>
+                                <div class="text">
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">1,3</p>
+                                </div>
+                            </div>
+                            <span class="searchMarkers" style="display: none;">
+                               брусок, бруски, БК-12, БК12, БК 12
+                            </span>
+                            <span class="price">735 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
                         </div>
                         <div class="tovar plita">
-                            <img src="images/opornayaplita.png" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Опорная плита</p>
+                            <img src="images/plita.jpg" alt="Плита опорная анкерная">
+                            <p class="title__tovar">Плита опорная анкерная</p>
                             <div class="about__tovar">
                                 <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
+                                    <p class="name__about">Шифр плиты/p>
+                                    <p class="value shifr">П-3и</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
+                                    <p class="name__about">Высота плиты, м</p>
+                                    <p class="value">0.015</p>
                                 </div>
                                 <div class="text">
                                     <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
+                                    <p class="value">0,05</p>
                                 </div>
                                 <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
+                                    <p class="name__about">Расход стали, кг</p>
+                                    <p class="value">2,9</p>
                                 </div>
                             </div>
                             <span class="searchMarkers" style="display: none;">
-                                Опорные плиты,Опорная плита
+                               плиты, плита, плита опорная анкерная, анкерная плита, п-3и, П3и , П 3и
                             </span>
-                            <span class="price">по запросу</span>
-                            <a href="#" class="button button__form">
-                                Запросить цену
-                            </a>
-                        </div>
-                        <div class="tovar plita">
-                            <img src="images/opornayaplita.png" alt="Стойка ЛЭП">
-                            <p class="title__tovar">Опорная плита</p>
-                            <div class="about__tovar">
-                                <div class="text">
-                                    <p class="name__about">Шифр опоры</p>
-                                    <p class="value">П10-1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Число стоек на опору</p>
-                                    <p class="value">1</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Шифр стойки</p>
-                                    <p class="value">СВ105-3,5; СВ105</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота стойки, м</p>
-                                    <p class="value">10,5</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Высота до нижней траверсы, м</p>
-                                    <p class="value">7,75</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Объем железобетона, м3</p>
-                                    <p class="value">0,47</p>
-                                </div>
-                                <div class="text">
-                                    <p class="name__about">Масса металлоконструкций, кг</p>
-                                    <p class="value">18</p>
-                                </div>
-                            </div>
-                            <span class="searchMarkers" style="display: none;">
-                                Опорные плиты,Опорная плита
-                            </span>
-                            <span class="price">10 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                            <span class="price">800 <i class="fa fa-rub" aria-hidden="false"></i></span>
                             <a href="#" class="button button__form">
                                 Оставить заявку
                             </a>
@@ -920,6 +1193,7 @@
                         <input type="text" name="email" id="email" placeholder="E-MAIL" required>
                         <input type="text" name="tovar" id="name__tovar" style="display: none;">
                         <input type="text" name="cost" id="cost__tovar" style="display: none;">
+                        <input type="text" name="shifr" id="shifr" style="display: none;">
                     </div>
                     <div style="display: none;" class="thank__you">
                         <h2 class="title">

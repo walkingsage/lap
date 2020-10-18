@@ -12,6 +12,19 @@ html {
 p {
   margin: 0; }
 
+.map {
+  position: absolute;
+  top: 0;
+  display: grid;
+  width: 70%;
+  align-items: start;
+  justify-items: center;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  margin-top: 60px;
+  left: 0;
+  z-index: 1; }
+
 .fixed {
   position: fixed !important;
   top: 0;
@@ -50,6 +63,7 @@ body {
     margin-top: 10px;
     margin-bottom: 18px; }
     body .header .header__content {
+      position: relative;
       display: grid;
       grid-template-columns: 25.5536626917% 25.2129471891% 16.6098807496% 16.1839863714% 16.4395229983%;
       grid-row-gap: 15px;
@@ -102,6 +116,8 @@ body {
         body .header .header__content .schema__proezda p {
           font-size: 0.875em;
           margin: 0 5px; }
+      body .header .header__content .schema__proezda:hover {
+        cursor: pointer; }
       body .header .header__content .schema__proezda__mobile {
         display: none;
         align-items: center; }
@@ -406,6 +422,8 @@ body {
               border-radius: 2px;
               border: none;
               justify-self: center; }
+            body .main .form form .form__content .submit .submit__btn:hover {
+              cursor: pointer; }
     body .main .banner {
       margin-top: 18px; }
       body .main .banner .banner__content {

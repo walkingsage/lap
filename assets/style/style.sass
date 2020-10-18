@@ -11,7 +11,20 @@ html
     scroll-behavior: smooth
 
 p
-    margin: 0 
+    margin: 0
+
+.map
+    position: absolute
+    top: 0
+    display: grid
+    width: 70%
+    align-items: start
+    justify-items: center
+    border: 1px solid #fafafa
+    border-radius: 10px
+    margin-top: 60px
+    left: 0
+    z-index: 1
 
 .fixed
     position: fixed !important
@@ -54,6 +67,7 @@ body
         margin-bottom: 18px
 
         .header__content
+            position: relative
             display: grid
             grid-template-columns: 300px/1174px*100% 296px/1174px*100% 195px/1174px*100% 190px/1174px*100% 193px/1174px*100% 
             grid-row-gap: 15px
@@ -105,6 +119,7 @@ body
                     text-transform: uppercase
                     line-height: 15px
                     margin-left: 5px
+                
 
             .schema__proezda
                 display: flex
@@ -117,6 +132,9 @@ body
                 p
                     font-size: 14px/16px*1em
                     margin: 0 5px
+
+            .schema__proezda:hover
+                cursor: pointer
 
             .schema__proezda__mobile
                 display: none
@@ -489,6 +507,9 @@ body
                             border-radius: 2px
                             border: none
                             justify-self: center
+
+                        .submit__btn:hover
+                            cursor: pointer
 
                     
         .banner

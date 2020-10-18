@@ -22,7 +22,14 @@ nameTovar = document.querySelectorAll('.title__tovar'),
 costTovar = document.querySelectorAll('.price'),
 inputNameTovar = document.getElementById('name__tovar'),
 inputCostTovar = document.getElementById('cost__tovar'),
-formcontent = document.querySelector('.form__content');
+formcontent = document.querySelector('.form__content'),
+shifr = document.querySelectorAll('.shifr'),
+shifrInput = document.getElementById('shifr'),
+proezd = document.querySelector('.schema__proezda'),
+proezdMobile = document.querySelector('.schema__proezda__mobile'),
+map = document.querySelector('.map'),
+nameInput = document.getElementById('name'),
+phoneinput = document.getElementById('phone');
 
 let typeTovar = "";
 let btnMore = false;
@@ -72,6 +79,14 @@ let tovarCut = () => {
         }
     }
     moreRemove();
+    if(tovarsContent == 0){
+        nothing.style.display = "grid";
+    }
+    else{
+        nothing.style.display = "none";
+    }
+    buttonMore.style.display = "none";
+    console.log(tovarsContent);
 };
 
 tovarCut();
@@ -161,7 +176,8 @@ categories.forEach(element => {
         typeTovar = "traverces" : element.classList.contains('ogolovki') ? 
         typeTovar = "ogolovki" : element.classList.contains('kronshtejn') ? 
         typeTovar = "kronshtejn" : element.classList.contains('homuts') ? 
-        typeTovar = "homuts" : element.classList.contains('yzels') ? 
+        typeTovar = "homuts" : element.classList.contains('styazjki') ? 
+        typeTovar = "styazjki" : element.classList.contains('yzels') ? 
         typeTovar = "yzels" : alert('Ошибка такого типа товара не найдено');
 
         for(let i = 0; i<tovar.length; i++){
@@ -299,6 +315,7 @@ formButton.forEach((element,i) => {
        form.style.display = "grid";
        inputNameTovar.value = nameTovar[i].textContent;
        inputCostTovar.value = `${costTovar[i].textContent}₽`;
+       shifrInput.value = shifr.textContent;
        formOpen = true;
        scrollOf();
    });
@@ -320,3 +337,65 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
         div.hide(); // скрываем его
     }
 });
+
+let mapOpen = false;
+
+proezd.addEventListener('click', () => {
+    if(!mapOpen){
+        map.style.display = "grid";
+        mapOpen = true;
+    }
+    else{
+        map.style.display = "none";
+        mapOpen = false;
+    }
+});
+
+proezdMobile.addEventListener('click', () => {
+    if(!mapOpen){
+        map.style.display = "grid";
+        mapOpen = true;
+    }
+    else{
+        map.style.display = "none";
+        mapOpen = false;
+    }
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".map"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0 && mapOpen) { // и не по его дочерним элементам
+        div.hide(); // скрываем его
+        scrollOn();
+    }
+});
+
+nameInput.addEventListener('input',function(){
+    nameInput.value = nameInput.value.replace(/[0-9,-.,:+/*]/g, '');
+});
+
+phoneinput.addEventListener('input',function(){
+    phoneinput.value = phoneinput.value.replace(/[a-z,A-Z,а-я,А-Я,-.,:+/*]/g, '');
+});
+
+$.fn.setCursorPosition = function(pos) {
+    if ($(this).get(0).setSelectionRange) {
+      $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+      var range = $(this).get(0).createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.moveStart('character', pos);
+      range.select();
+    }
+};
+
+let firstClick = 0;
+
+$("#phone").click(function(){
+    if(firstClick == 0){
+        $(this).setCursorPosition(3);
+        firstClick++;
+    }
+  }).mask("+7(999)-999-99-99");
